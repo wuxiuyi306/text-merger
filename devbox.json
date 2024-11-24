@@ -1,0 +1,14 @@
+{
+    "name": "text-merger",
+    "services": {
+        "web": {
+            "type": "python",
+            "version": "3.9",
+            "requirements": "requirements.txt",
+            "command": "gunicorn -b 0.0.0.0:8000 app:app"
+        }
+    },
+    "ports": {
+        "8000": "8000"
+    }
+}
